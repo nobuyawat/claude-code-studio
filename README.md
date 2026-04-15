@@ -114,6 +114,19 @@ Claude Code自身がAIエンジン。API課金なし。キー管理なし。
 
 ---
 
+## Known Issues
+
+| Issue | Status | Workaround |
+|-------|--------|------------|
+| Claude in Chrome domain restriction (v1.0.66+) | 🔴 Active — P1 at Anthropic | Use Desktop chat for browser ops. See [workaround-guide.md](./docs/workaround-guide.md) |
+
+> **Note:** Claude in Chrome v1.0.66+ blocks navigation to non-Google domains from Claude Code (bridge).
+> This is an [Anthropic-acknowledged regression](https://github.com/anthropics/claude-code/issues/43255), not a configuration issue.
+> All local operations (code gen, preview, file processing) work normally.
+> Browser operations can be performed via Claude Desktop chat as a workaround.
+
+---
+
 ## 動作環境
 
 - Claude Code
